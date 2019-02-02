@@ -20,4 +20,10 @@ describe 'FizzBuzz' do
     end
 
   end
+
+  context 'edgecases' do
+    it "raises error if not an integer" do
+      expect { fizzbuzz("abc")}.to raise_error("Not an iteger")
+    end
+  end
 end
